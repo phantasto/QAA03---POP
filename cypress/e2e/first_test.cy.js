@@ -1,4 +1,4 @@
-import LoginPage from "../pages/login";
+import Login from "../pages/login";
 describe("login", () => {
 	beforeEach(() => {
 		cy.visit("www.instagram.com");
@@ -6,11 +6,11 @@ describe("login", () => {
 	});
 	// logowanie
 	it("Log in to the Instagram", () => {
-		const LPage = new LoginPage();
+		const LPage = new Login();
 		//cy.get(":nth-child(1) > .x1i10hfl > ._acan > ._aacl").click();
-		LPage.pressLogIn().click();
-		LPage.getLoginInput().click();
-		LPage.getPasswordInput().click();
-		LPage.getLogBtn().click();
+		LPage.getLogIn().click();
+		LPage.LoginInput();
+		LPage.PasswordInput();
+		LPage.getLoginBtn().click();
 	});
 });

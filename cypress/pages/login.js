@@ -1,18 +1,18 @@
-class LoginPage {
-	pressLogIn() {
+class Login {
+	getLogIn() {
 		return cy.get(":nth-child(1) > .x1i10hfl > ._acan > ._aacl");
 	}
-	getLoginInput() {
+	LoginInput() {
 		return cy
 			.get(":nth-child(1) > .x1npaq5j > ._aa48 > ._aa4b")
 			.type("testeradept");
 	}
-	getPasswordInput() {
+	PasswordInput() {
 		return cy
 			.get(":nth-child(2) > .x1npaq5j > ._aa48 > ._aa4b")
 			.type("k0nk0rd4t");
 	}
-	getLogBtn() {
+	getLoginBtn() {
 		return cy.get("._acan > .x9f619");
 	}
 	getOptions() {
@@ -26,4 +26,4 @@ class LoginPage {
 		);
 	}
 }
-export default LoginPage;
+export default Login;
